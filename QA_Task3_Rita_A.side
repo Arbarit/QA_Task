@@ -1,0 +1,128 @@
+{
+  "id": "0fe6b8b2-f114-4268-b2c8-906038656d43",
+  "version": "2.0",
+  "name": "QA_Task3_Rita_A",
+  "url": "https://www.hostinger.com/",
+  "tests": [{
+    "id": "42c99a3f-16f1-408e-a48b-7c66924ef728",
+    "name": "Untitled",
+    "commands": [{
+      "id": "65c08a49-3e8f-416f-b45d-b97ebbc461ea",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.hostinger.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "456474f6-3c6a-45dc-8b93-6e625b422c7a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "758x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2c9854e-f7d7-4705-8e25-5de5421c2a7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-nav__mobile-menu-burger",
+      "targets": [
+        ["css=.h-nav__mobile-menu-burger", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b90a3770-8216-4427-b848-9edddd202901",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-nav-dropdown__main-section:nth-child(1) > .h-nav-dropdown__main-section--title",
+      "targets": [
+        ["css=.h-nav-dropdown__main-section:nth-child(1) > .h-nav-dropdown__main-section--title", "css:finder"],
+        ["xpath=//div[@id='layout']/nav/div/div[3]/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//nav/div/div[3]/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a586056-e9f5-4269-96e1-3074950f998a",
+      "comment": "Web hosting option",
+      "command": "click",
+      "target": "linkText=Web Hosting",
+      "targets": [
+        ["linkText=Web Hosting", "linkText"],
+        ["css=#hgr-navigation-menu_dropdown-shared_hosting .h-mobile-menu__item--title", "css:finder"],
+        ["xpath=(//a[contains(text(),'Web Hosting')])[2]", "xpath:link"],
+        ["xpath=(//div[@id='hgr-navigation-menu_dropdown-shared_hosting']/div/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/web-hosting')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div[3]/div/a", "xpath:position"]
+      ],
+      "value": "#hgr-navigation-menu_dropdown-shared_hosting > div > a"
+    }, {
+      "id": "018ca715-8e23-4be9-b683-e5aa4336eaee",
+      "comment": "Business plan",
+      "command": "click",
+      "target": "css=.h-button-danger",
+      "targets": [
+        ["css=.h-button-danger", "css:finder"],
+        ["xpath=(//button[@id=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='h-pricing-table-carousel']/div/div/div[3]/div/div/div/div[4]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button", "xpath:position"]
+      ],
+      "value": "<div data-v-dd9976e2=\"\" class=\"h-pricing-card__title t-h3\">\\n      Business\\n    </div>"
+    }, {
+      "id": "d095e9ea-6230-4fc3-9b9d-0856113c6178",
+      "comment": "24 months",
+      "command": "mouseOver",
+      "target": "css=.h-button-danger",
+      "targets": [
+        ["css=.h-button-danger", "css:finder"],
+        ["xpath=(//button[@id=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='h-pricing-table-carousel']/div/div/div[3]/div/div/div/div[4]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button", "xpath:position"]
+      ],
+      "value": "<span class=\"up-body cart-period__period\" data-v-fd9075a0=\"\">24 months</span>"
+    }, {
+      "id": "a18ffc27-9170-44ec-a920-020038b69f7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-period-wrapper:nth-child(3) .d-flex > .up-body",
+      "targets": [
+        ["css=.cart-period-wrapper:nth-child(3) .d-flex > .up-body", "css:finder"],
+        ["xpath=(//div[@id='hcart-cart-period-selector']/div[2]/span)[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[3]/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "294e09ec-e371-4b8f-aa5e-1429b6b521dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-input__input",
+      "targets": [
+        ["css=.h-input__input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='create-account']/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e1c73f5-4d56-42d7-8d33-c37e93360fd6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.h-input__input",
+      "targets": [
+        ["css=.h-input__input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='create-account']/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "valid@emailFormat.com"
+    }]
+  }],
+  "suites": [{
+    "id": "3b57d3d7-01c5-4880-8855-480059944464",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["42c99a3f-16f1-408e-a48b-7c66924ef728"]
+  }],
+  "urls": ["https://www.hostinger.com/"],
+  "plugins": []
+}
